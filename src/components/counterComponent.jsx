@@ -36,6 +36,8 @@ class Counter extends Component {
         return ( 
             <React.Fragment>
                 <img src={this.state.imageUrl} alt="" />
+                {this.props.children}
+                <h4>This is from the children # {this.props.id}</h4>
                 <span style={this.styles} className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 {/* <button 
                     onClick={this.handleIncrement} 
